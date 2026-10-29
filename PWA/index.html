@@ -29,9 +29,10 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
         .then(() => console.log('Service Worker Registered'));
-    }    
-// 2. 구글 앱 스크립트 웹 앱 URL 붙여넣기
-    const GAS_URL = "https://script.google.com/macros/s/AKfycbwyUto_rWYGE8tkvaTCv3e9Sa-bzLoNhdhCtTa8dEPVWUMERhdlND1p2sv2HYI15YiF/exec";
+    }
+
+    // 2. 구글 앱 스크립트 웹 앱 URL 붙여넣기
+    const GAS_URL = "https://script.google.com/macros/s/AKfycbx1k3lHFHB1ynz6rAop7Hx2yScCZhNrRsxrVU-X8ez-KjCE4UVGby7np-_MLDlskOyd/exec";
 
     async function sendMemo() {
       const input = document.getElementById('memoInput');
